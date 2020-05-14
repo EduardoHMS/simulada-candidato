@@ -60,6 +60,24 @@ public class candidato {
 		System.out.println("Pontos por experiência: " + pontosAno);
 		
 		
+		// Cargos //
+		System.out.println(" ");
+		
+		if((escolaridade < 2)) {
+			System.out.println("Infelizmente seu perfil não atende a empresa");
+		}else {
+			System.out.println("Você está habilitado para o(s) seguinte(s) cargo(s): ");
+			if((escolaridade >= 2)&&(Character.toLowerCase(habilitacao) == 's')) {
+				System.out.println("ASSISTENTE");
+			}
+			if((escolaridade >= 3)&&(anosExperiencia > 2)) {
+				System.out.println("GERENTE");
+			}
+			if((escolaridade >= 3)&&(Character.toLowerCase(viajar) == 's')&&(anosExperiencia > 5)) {
+				System.out.println("ANALISTA");
+			}
+		}
+		
 		sc.close();
 	}
 
