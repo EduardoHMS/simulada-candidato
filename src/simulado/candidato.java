@@ -30,6 +30,36 @@ public class candidato {
 		System.out.println("Você tem habilitação de motorista (S/N)? ");
 		habilitacao = sc.next().charAt(0);
 		
+		// Calculos dados + experiencia //
+		System.out.println(" ");
+		int pontos, pontosAno; 
+		pontos = 0;
+		pontosAno = 0;
+		if(escolaridade == 1) {
+			pontos = 10;
+		}else if(escolaridade == 2) {
+			pontos = 20;
+		}else if(escolaridade == 3) {
+			pontos = 30;
+		}else if(escolaridade == 4) {
+			pontos = 40;
+		}
+		
+		System.out.println("Pontos por escolaridade: " + pontos);
+		
+		if(anosExperiencia == 0) {
+			pontosAno = 0;
+		}else if(anosExperiencia <= 2) {
+			pontosAno = 10;
+		}else if(anosExperiencia <= 5) {
+			pontosAno = 20;
+		}else if(anosExperiencia > 5) {
+			pontosAno = 40;
+		}
+		
+		System.out.println("Pontos por experiência: " + pontosAno);
+		
+		
 		sc.close();
 	}
 
