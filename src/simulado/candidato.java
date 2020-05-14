@@ -19,6 +19,17 @@ public class candidato {
 		int escolaridade = sc.nextInt();
 		
 		
+		// Dados Demais //
+		int anosExperiencia;
+		char viajar, habilitacao;
+		System.out.println(" ");
+		System.out.println("Você tem quantos anos de experiência profissional? ");
+		anosExperiencia = sc.nextInt();
+		System.out.println("Você tem disponibilidade para viajar (S/N)? ");
+		viajar = sc.next().charAt(0);
+		System.out.println("Você tem habilitação de motorista (S/N)? ");
+		habilitacao = sc.next().charAt(0);
+		
 		sc.close();
 	}
 
